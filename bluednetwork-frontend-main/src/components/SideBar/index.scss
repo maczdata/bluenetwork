@@ -1,0 +1,121 @@
+.sidebar-container {
+  max-width: 100%;
+  padding-bottom: 1rem;
+  background: #ffffff;
+  box-shadow: 4px 0px 10px rgba(43, 53, 130, 0.07);
+}
+
+.company-logo-container {
+  border-bottom: 1px solid #eeeeee;
+  padding: 1rem 1.9rem;
+}
+
+.company-logo-container img {
+  height: 32.29299545288086px;
+  width: 130px;
+}
+
+.dashboard__link__wrapper {
+  padding: 1rem 0 1rem 1rem;
+}
+
+.dashboard__link__wrapper ul li {
+  width: 100%;
+  padding: 0.7rem 0 0.7rem 0.9rem;
+  margin: 5px 0 0;
+  .active {
+    color: #ff7f00 !important;
+  }
+}
+
+.dashboard__link__wrapper ul li:hover {
+  background: #ffffff;
+  box-shadow: -4px 0px 15px rgba(43, 53, 130, 0.08);
+  border-radius: 10px 0px 0px 10px;
+}
+
+.dashboard__link__wrapper ul li a {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #000152;
+  display: flex;
+  align-items: center;
+}
+
+.dashboard__link__wrapper ul li a img {
+  margin-right: 15px;
+  font-size: 16px;
+}
+
+.sidebar__services__link__container {
+  display: flex;
+  width: 100%;
+  padding-right: 1rem;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.sidebar__services__link__container .sidebar__dropdown__icon {
+  color: #9999ba;
+  font-weight: 500;
+  font-size: 23px;
+  line-height: 19px;
+}
+
+.sidebar__services__dropdown__container {
+  padding: 0.5rem 0 0.5rem 1rem;
+  // display: none;
+}
+
+.sidebar__services__dropdown__container ul li {
+  padding: 0.4rem 0 0.4rem 0.9rem !important;
+  margin: 3px 0 0 !important;
+  a.active{
+    color: #ff7f00;
+  }
+}
+
+.sidebar__services__dropdown__container ul li a:hover {
+  font-size: 16px;
+  // line-height: 18px;
+  color: #ff7f00 !important;
+  
+}
+
+// .display__sidebar__dropdown:hover {
+//   .sidebar__services__dropdown__container {
+//     display: block;
+//   }
+// }
+
+.sidebar__logout__link {
+  margin-top: 17rem !important;
+}
+
+.sidebar__logout__link .logout-text {
+  color: #ff1c1c;
+}
+
+.app_download_container {
+  position: relative;
+  width: 219px;
+  height: 224px;
+
+  .app_download_img {
+    position: absolute;
+  }
+  .app_download_button {
+    position: absolute;
+    z-index: 9;
+    bottom: 0;
+    left: 10;
+    padding: 0.5em 1.8em;
+    margin: 22px 20px;
+    background: #000285;
+    box-shadow: 0px 6px 20px rgba(83, 41, 0, 0.08);
+    border-radius: 100px;
+    color: #ffffff;
+  }
+}

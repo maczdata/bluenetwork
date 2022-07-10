@@ -1,0 +1,108 @@
+.auth-wrapper {
+  width: 100%;
+}
+
+.first-section {
+  background: url("../../assets/Group\ 215.svg");
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: contain, cover;
+}
+
+.first-section img {
+  margin: 70px 130px 20px;
+  justify-self: center;
+  width: 480px;
+}
+
+.second-section {
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.login-form {
+  background: #ffffff;
+  box-shadow: 0px 8px 50px rgba(43, 53, 130, 0.07);
+  min-width: 480px;
+  padding: 30px;
+}
+
+.login-form h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.verified__page {
+  padding: 50px 0;
+}
+
+.tick {
+  width: 100%;
+  text-align: center;
+  /* margin-top: -140px; */
+}
+
+.tick .tick-icon {
+  font-size: 15rem;
+  color: #0003b8;
+  border: 3px solid #0003b8;
+  border-radius: 50%;
+}
+
+.verified__msg p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: #0003b8;
+}
+
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* styles */
+  .first-section {
+    display: none;
+  }
+
+  .auth-wrapper {
+    padding: 0 10px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* styles */
+  .first-section {
+    display: none;
+  }
+
+  .auth-wrapper {
+    padding: 0 10px;
+  }
+
+  .second-section .login-form {
+    margin: 0 auto;
+  }
+}
+
+/* Tablets, iPads (portrait) ---------- */
+@media screen and (max-width: 985px) {
+  /* styles */
+  .first-section {
+    background: url("../../assets/Group\ 215.svg");
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: contain, cover;
+    margin: auto;
+  }
+
+  .first-section img {
+    margin: 10px 0px 0px;
+    justify-self: center;
+    width: 430px;
+  }
+}

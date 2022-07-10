@@ -1,0 +1,124 @@
+.bg-utility {
+  background-image: url(../../assets/Diamond-side.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-bottom: 10rem;
+  margin-top: -12rem;
+  max-width: 100%;
+}
+.utility {
+  padding-top: 25rem;
+}
+
+.utility-contents {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 20px;
+  margin: 0 auto;
+}
+
+.utility-contents-seven .housing {
+  margin: 20px;
+}
+
+.utility-contents-five {
+  margin: auto;
+}
+
+.utility-contents-seven .card {
+  background: #ffffff;
+  box-shadow: 0px 8px 40px rgba(43, 53, 130, 0.12);
+  border-radius: 20px;
+  border: none;
+  max-width: 299px;
+  max-height: 299px;
+}
+.utility-contents-seven .card .arrow {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(43, 53, 130, 0.2);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+}
+.utility-contents-seven .card .name {
+  color: #000152;
+  font-weight: 600;
+  font-size: 18px;
+}
+.diamon-pattern {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -9em;
+}
+
+.add_pd {
+  padding: 0 20px;
+}
+
+.hide-on-small-screen {
+  /* width: 400px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide-on-small-screen img {
+  width: 400px;
+}
+
+.display-on-small-screen {
+  display: none;
+}
+
+.fix-spacing {
+  margin: 50px !important;
+}
+
+
+
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* styles */
+  .utility-contents {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+
+  .utility-contents-seven .housing {
+    margin: 0px;
+  }
+
+  .utility-contents-five {
+    display: none;
+  }
+
+  .utility-contents-seven .card {
+    background: #ffffff;
+    box-shadow: 0px 8px 40px rgba(43, 53, 130, 0.12);
+    border-radius: 20px;
+    border: none;
+    width: 100%;
+    margin: -30px 20px -40px;
+    /* max-height: 299px; */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* styles */
+  .add_pd {
+    text-align: center;
+  }
+
+  .hide-on-small-screen {
+    display: none;
+  }
+
+  .display-on-small-screen {
+    display: block;
+  }
+
+  .fix-spacing {
+    margin: 30px 0!important;
+  }
+}

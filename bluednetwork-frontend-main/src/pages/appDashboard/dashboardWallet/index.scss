@@ -1,0 +1,249 @@
+.wallet__dashboard {
+  width: 100%;
+  padding: 10px;
+}
+
+.wallet__balance__wrapper {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(43, 53, 130, 0.09);
+  border-radius: 10px;
+  padding: 20px;
+
+  .wallet__title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    span {
+      background: #9999ba;
+      border-radius: 100px;
+      padding: 6px 10px;
+    }
+
+    p {
+      margin-top: 16px;
+      margin-left: 20px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000152;
+    }
+  }
+
+  .wallet__balance {
+    text-align: center;
+
+    .wallet__amount {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 48px;
+      line-height: 72px;
+      color: #000152;
+      margin: 0 10px;
+    }
+  }
+
+  .wallet__action__btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 10px;
+    .topup_options{
+      color: #000152;
+      h6{
+        color: #000152;
+        margin-bottom: 20px;
+      }
+      li{
+        cursor: pointer;
+        margin-bottom: 10px;
+        padding: 10px;
+        &:hover{
+          border-bottom: 1px solid lightgrey;
+        }
+      }
+    }
+    .details{
+      text-align: center;
+      p{
+        font-size: 14px;
+      }
+      h5{
+        font-size: 16px;
+        color: #000152;
+      }
+      div{
+        span{
+          cursor: pointer;
+        }
+      }
+    }
+    button {
+      background: #ff7f00;
+      box-shadow: 0px 6px 20px rgba(83, 41, 0, 0.08);
+      border-radius: 100px;
+      border: none;
+      padding: 5px 10px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 15px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .btn-withdraw {
+      background: #ffffff;
+      box-shadow: 0px 6px 20px rgba(83, 41, 0, 0.08);
+      border-radius: 100px;
+      border: none;
+      padding: 4px 10px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 15px;
+      text-align: center;
+      color: #ff7f00;
+      border: 1px solid #ff7f00;
+    }
+  }
+}
+.seconds {
+  background: #ffffff;
+  box-shadow: 0px 0px 30px rgba(43, 53, 130, 0.09);
+  border-radius: 10px;
+  padding: 20px;
+
+  .wallet__transaction__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    span {
+      background: #9999ba;
+      border-radius: 100px;
+      padding: 6px 8px;
+    }
+
+    p {
+      margin-top: 16px;
+      margin-left: 20px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000152;
+    }
+  }
+  .transaction {
+    display: flex;
+    flex-direction: row;
+    background: #ffffff;
+    box-shadow: 0px 0px 25px rgba(43, 53, 130, 0.06);
+    border-radius: 5px;
+    margin: 5px 0;
+    align-items: center;
+    padding: 7px 5px;
+
+    .img-symbol {
+      background: #ff1c1c;
+      border-radius: 100px;
+      padding: 6px 8px;
+    }
+
+    .img-symbol-2 {
+      background: #000285;
+      border-radius: 100px;
+      padding: 6px 8px;
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    p {
+      padding: 0;
+      margin: 0;
+    }
+
+    .details {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 5px 0 9px;
+    }
+
+    .status {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 0 5px 0 9px;
+    }
+
+    .header {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 11px;
+      line-height: 16px;
+      color: #000152;
+      width: 60%;
+    }
+
+    .amount {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: right;
+      color: #ff1c1c;
+    }
+
+    .amount-2 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 18px;
+      text-align: right;
+      color: #ff7f00;
+    }
+
+    .provider {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 10px;
+      line-height: 15px;
+      color: #59597a;
+    }
+
+    .completed {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 7px;
+      line-height: 10px;
+      text-align: right;
+      color: #4fa747;
+      background: none;
+    }
+
+    .pending {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 7px;
+      line-height: 10px;
+      text-align: right;
+      color: #ff1c1c;
+      background: none;
+    }
+
+    .dates {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 9px;
+      line-height: 13px;
+      color: #000152;
+      background: none;
+    }
+  }
+}

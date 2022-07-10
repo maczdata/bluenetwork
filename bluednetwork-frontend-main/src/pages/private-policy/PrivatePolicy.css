@@ -1,0 +1,61 @@
+.private-policy-title {
+  background: #e4effb;
+  padding: 60px 0;
+  text-align: center;
+}
+
+.private-policy-title h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  line-height: 78px;
+  text-align: center;
+  color: #1f1f1f;
+  padding: 0 5px;
+}
+
+.private-policy-content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 10px !important;
+}
+
+.private-policy-content p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 26px;
+  color: #59597a;
+}
+
+.private-policy-content h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+  color: #59597a;
+  margin: 20px 0;
+}
+
+.private-policy-content span {
+  margin-right: 2.5rem;
+}
+
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* styles */
+  .private-policy-title {
+    background: #e4effb;
+    padding: 60px 0 !important;
+    text-align: center;
+  }
+
+  .private-policy-title h2 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 35px;
+    line-height: 58px;
+    text-align: center;
+    color: #1f1f1f;
+  }
+}

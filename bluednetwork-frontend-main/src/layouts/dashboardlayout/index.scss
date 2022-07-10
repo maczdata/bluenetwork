@@ -1,0 +1,107 @@
+.dashboard-left {
+    width: 17%;
+  }
+  
+  .dashboard-right {
+    width: 83%;
+    margin-left: 2px;
+  }
+  
+  .dashboard-components {
+    padding: 10px 10px;
+  }
+  
+  /* Smartphones (portrait and landscape) ---------- */
+  @media screen and (max-width: 480px) {
+    /* styles */
+  
+    /* .dashboard-left {
+      display: none;
+      width: 20%;
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+    } */
+  
+    .active {
+      transition: 1s;
+      display: block;
+    }
+  
+    .dashboard-right {
+      width: 100%;
+      margin-left: 0px;
+    }
+  }
+  
+  /* Tablets, iPads (portrait) ---------- */
+  @media screen and (max-width: 768px) {
+    /* styles */
+    .dashboard-left {
+      display: none;
+    }
+  
+    .dashboard-right {
+      width: 100%;
+      margin-left: 0px;
+    }
+  
+    .dashboard-components {
+      padding: 20px 10px;
+    }
+  }
+  .kyc_div{
+      display: flex;
+      align-items: center;
+      margin:  10px;
+      .keyHeader{
+          flex-basis: 15%;
+          display: flex;
+          padding: 11px 18px;
+          align-items: center;
+          background: rgba(153, 153, 186, .12);
+          border-radius: 10px;
+          p{
+              font-size: 12px;
+              margin-bottom: 0;
+              margin-left: 13px;
+              color: #000152;
+          }
+      }
+      .kyc_items{
+          display: flex;
+          background: rgba(153, 153, 186, .12);
+          border-radius: 10px;
+          margin-left: auto;
+          flex-basis: 83%;
+          justify-content: space-between;
+          padding: 13px 18px;
+          .kyc_item{
+              display: flex;
+              align-items: center;
+              .deets{
+                  margin-left: 10px;
+                h5{
+                    font-size: 14px;
+                    margin-bottom: 0;
+                    color: #000152;
+                    margin-bottom: 2px;
+                }
+                p{
+                    margin-bottom: 0;
+                    font-size: 10px;
+                    span.success{
+                      color: green;
+                    }
+                    span.cancel{
+                        color: red;
+                    }
+                }
+              }
+              &.hover:hover{
+                  cursor: pointer;
+              }
+          }
+      }
+  }

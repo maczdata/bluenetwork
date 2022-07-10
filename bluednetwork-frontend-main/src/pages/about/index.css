@@ -1,0 +1,156 @@
+.vision {
+  background-color: #e4effb;
+  margin: 100px 0 0;
+  padding: 50px 0;
+}
+.about-cta-btns {
+  margin-top: 8rem !important;
+}
+
+.about-cta-btns .one {
+  font-style: normal;
+  width: 15em;
+  height: 3em;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  background: var(--text-color-link);
+  color: var(--background-color-light);
+  padding: 9px 23px;
+  border-radius: 100px;
+  border: none;
+  /* margin-right: 10px; */
+}
+.about-cta-btns .two {
+  color: var(--text-color-link);
+  font-style: normal;
+  width: 15em;
+  height: 3em;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  padding: 7px 23px;
+  text-align: center;
+  background: var(--background-color-light);
+  border-radius: 100px;
+  border: 1px solid var(--text-color-link);
+  background-color: transparent;
+  margin-left: 10px;
+}
+.empowered {
+  min-height: 50vh;
+  background-color: #d7e5ff;
+}
+.teams-img {
+  background-image: url("../../assets/team.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 90vh;
+}
+.secondary-blue {
+  color: #000152;
+}
+.position {
+  color: #9c9c9c;
+}
+.organization {
+  color: #9999ba;
+}
+.testimonial {
+  min-height: 50vh;
+}
+.top-section {
+  margin-left: 5em !important;
+}
+.customer-img,
+.team-img {
+  background-image: url("../../assets/card-img-frame.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.customer-img img {
+  margin-left: -50px;
+}
+.card-ellipse {
+  height: 123px !important;
+  padding: 0 0.5em;
+  background-image: url("../../assets/team-ellipse.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.card {
+  width: 405px !important;
+}
+.card-icons {
+  cursor: pointer;
+  width: 25px;
+}
+.team-card {
+  width: 330px !important;
+  height: 412px !important;
+  margin-bottom: 6rem;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 30px rgba(43, 53, 130, 0.1);
+  border: none;
+  border-radius: 15px;
+}
+.team-img img {
+  width: 250px;
+  height: 100%;
+  margin-left: -50px;
+}
+.column-two {
+  width: 500px !important;
+  height: 700px !important;
+  background-image: url("../../assets/teams-diamond.svg");
+  background-size: 700px !important;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.card-right {
+  /* float: right !important; */
+  margin-top: 5em;
+  text-align: center;
+}
+.d {
+  justify-content: space-between !important;
+}
+.newsletter {
+  background: #e4effb;
+  min-height: 50vh;
+}
+.newsletter form {
+  width: 80% !important;
+  height: 2.8em !important;
+}
+.newsletter input {
+  outline: none;
+}
+.envelope {
+  color: #b4b4b4;
+  margin: 1em 0.5em 0 0.5em;
+}
+.bg-blue {
+  background-color: #0003b8;
+}
+.hero-bg-utility {
+  background-image: url(../../assets/diamonds-right.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+.bg-utility-right {
+  background-image: url(../../assets/Diamond-side.svg),
+    url(../../assets/pattern-left.svg);
+  background-repeat: no-repeat;
+  background-position: right top, left top;
+}
+.bg-utility-left {
+  background-image: url(../../assets/diamonds-right.svg),
+    url(../../assets/pattern-left.svg);
+  background-repeat: no-repeat;
+  background-position: right top, left top;
+  padding: 100px 0;
+}

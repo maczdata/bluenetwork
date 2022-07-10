@@ -1,0 +1,51 @@
+.modalForDashBoard{.x{
+    position: absolute;
+    right: 10px;
+    top: -40px;
+    &:hover{
+        cursor: pointer;
+    }
+}
+form{
+    position: relative;
+    label{
+        display: block;
+        p{
+            margin-bottom: 5px;
+            font-size: 14px;
+            color: #000152;
+        }
+        input{
+            padding: 5px;
+            border: 1px solid #000152;
+            &:focus-visible{
+                border: 1px solid #000152;
+                outline: none;
+            }
+        }
+        span.contain{
+            display: block;
+            .radio{
+                width: fit-content;
+            }
+            span{
+                margin-left: 10px;
+                font-size: 14px;
+                color: #000152;
+            }
+        }
+        button{
+            padding: 10px;
+            margin-top: 20px;
+            display: block;
+            margin: auto;
+            display: block;
+            background: #FF7F00;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            font-size: 15px;
+            width: 100%;
+        }
+    }
+}}

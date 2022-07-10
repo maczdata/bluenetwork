@@ -1,0 +1,79 @@
+/* Hero section */
+
+.hero-home-intro .hero-home-btn .one,
+.one-btn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  background: var(--text-color-link);
+  color: var(--background-color-light);
+  padding: 9px 23px;
+  border-radius: 100px;
+  border: none;
+  margin-right: 10px;
+}
+
+.hero-home-intro .hero-home-btn .two {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--text-color-link);
+  background: var(--background-color-light);
+  padding: 7px 23px;
+  border-radius: 100px;
+  border: 2px solid var(--text-color-link);
+  margin-left: 10px;
+}
+
+.hero-home-btn {
+  margin-top: 20px;
+}
+
+.bg-utility-con {
+  /* margin-top: 2em; */
+  margin-top: -150px;
+  background-image: url(../../assets/Diamond-side.svg);
+  background-repeat: no-repeat;
+  background-position: right top;
+  margin-bottom: 10rem;
+  margin-top: -12rem;
+}
+.utility {
+  padding-top: 20rem;
+}
+
+.add_pd {
+  padding: 0 20px;
+}
+
+.display-on-small-screen {
+  display: none;
+}
+
+.fix-spacing {
+  margin: 50px !important;
+}
+
+@media screen and (max-width: 768px) {
+  /* styles */
+  .add_pd {
+    text-align: center;
+  }
+
+  .hide-on-small-screen {
+    display: none;
+  }
+
+  .display-on-small-screen {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  .fix-spacing {
+    margin: 30px 0!important;
+  }
+}

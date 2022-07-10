@@ -1,0 +1,83 @@
+.culture-container {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+  background-color: #e4effb;
+  min-height: 584px;
+  padding: 3em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+}
+
+.left-svg {
+  position: absolute;
+}
+
+/* .culture-contents {
+    align-items: center;
+} */
+
+.culture-heading {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 57px;
+  /* text-align: center; */
+  color: #1f1f1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: .3em;
+}
+
+.culture-header {
+  margin-bottom: 3em;
+}
+
+.cards-row {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.cards-wrap {
+  padding: 0.5em 0.5em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.culture-card {
+  position: relative;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(43, 53, 130, 0.1);
+  border-radius: 15px;
+  height: 187px;
+  width: 224px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 1.3em auto;
+}
+
+.bottom-svg {
+  position: absolute;
+  top: 80%;
+}
+
+@media screen and (max-width: 600px) {
+  .cards-row {
+    display: block;
+  }
+
+  .culture-card {
+    margin: 3em auto;
+  }
+}

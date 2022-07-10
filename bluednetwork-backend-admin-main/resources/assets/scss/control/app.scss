@@ -1,0 +1,1064 @@
+@import "variable";
+@import "./node_modules/tailwindcss/base";
+@import "./node_modules/tailwindcss/components";
+@import "./node_modules/tailwindcss/utilities";
+@import "./node_modules/pikaday/scss/pikaday";
+/*@import "./node_modules/easymde/src/css/easymde.css";*/
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+@import "~@fortawesome/fontawesome-free/scss/regular";
+@import "~@fortawesome/fontawesome-free/scss/solid";
+@import "~@fortawesome/fontawesome-free/scss/brands";
+@import '~flatpickr/dist/flatpickr';
+//pikaday
+
+.pika-button{
+    @apply text-center;
+    &:hover {
+       @apply text-white bg-primary;
+    }
+}
+
+:root {
+    --fc-checkbox-grid-cols: 3;
+}
+
+/* disabled states */
+input[disabled],
+textarea[disabled],
+select[disabled] {
+    @apply bg-blue-gray-50 cursor-not-allowed;
+}
+
+.form-checkbox[disabled],
+.form-checkbox.disabled,
+.form-radio[disabled],
+.form-radio.disabled {
+    @apply opacity-75 text-blue-gray-300;
+}
+
+/* error states */
+.has-error label {
+    @apply text-red-500;
+}
+
+.input-error,
+.has-error .form-input,
+.has-error .form-select,
+.has-error .custom-select__button {
+    @apply border-red-300 text-red-900 focus:border-red-300;
+}
+
+.input-error:not(.password-toggleable),
+.has-error .custom-select__button,
+.has-error .form-input:not(.password-toggleable),
+.has-error .form-select:not(.password-toggleable) {
+    @apply focus:ring-red-400 focus:ring-opacity-50;
+}
+
+.has-error .password-input-container {
+    @apply focus-within:ring-red-400 focus-within:border-red-300 focus-within:ring-opacity-50;
+}
+
+.has-error .password-toggle {
+    @apply border-red-300;
+}
+
+.input-error::placeholder,
+.has-error .form-input::placeholder,
+.has-error .form-select::placeholder {
+    @apply text-red-300;
+}
+
+/* checkbox group */
+.form-checkbox-group {
+    grid-template-columns: repeat(var(--fc-checkbox-grid-cols), minmax(0, 1fr));
+}
+
+/* filepond overrides */
+/* purgecss start ignore */
+.filepond--panel-root {
+    @apply border-dashed border-2 border-blue-gray-200 rounded-md max-w-full transition;
+    @apply bg-transparent;
+}
+
+.filepond--label-action {
+    @apply text-blue-600 transition hover:opacity-75 focus:opacity-75;
+    text-decoration-color: theme('colors.blue.600');
+}
+
+.fc-filepond-desc {
+    @apply text-blue-gray-500;
+}
+
+.fc-filepond--sub-desc {
+    @apply text-xs;
+}
+/* purgecss end ignore */
+
+/* flatpickr overrides */
+/* purgecss start ignore */
+.flatpickr-calendar {
+    width: 345px;
+}
+
+.flatpickr-calendar.open {
+    max-height: 650px;
+}
+
+.flatpickr-months {
+    @apply relative bg-blue-600 text-white py-3 px-2 items-center;
+}
+
+.flatpickr-months .flatpickr-prev-month,
+.flatpickr-months .flatpickr-next-month {
+    @apply absolute transition rounded-full top-1/2 transform -translate-y-1/2;
+}
+
+.flatpickr-months .flatpickr-prev-month.flatpickr-prev-month {
+    @apply left-1;
+}
+
+.flatpickr-months .flatpickr-next-month.flatpickr-next-month {
+    @apply right-1;
+}
+
+.flatpickr-months .flatpickr-prev-month:hover svg,
+.flatpickr-months .flatpickr-next-month:hover svg {
+    /*fill: theme('colors.blue-gray.800');*/
+}
+
+.flatpickr-months .flatpickr-prev-month svg,
+.flatpickr-months .flatpickr-next-month svg {
+    fill: #fff;
+    opacity: .8;
+}
+
+.flatpickr-months .flatpickr-prev-month:hover,
+.flatpickr-months .flatpickr-next-month:hover {
+    @apply bg-blue-gray-300;
+}
+
+.flatpickr-months .flatpickr-month {
+    @apply flex w-full;
+}
+
+.flatpickr-months .flatpickr-month .flatpickr-current-month {
+    @apply text-white w-full relative;
+    left: unset;
+    transform: unset;
+}
+
+.flatpickr-months .flatpickr-month .flatpickr-current-month .flatpickr-monthDropdown-months {
+    @apply pl-0 pr-1 mr-1;
+}
+
+.flatpickr-current-month .numInputWrapper span.arrowUp:after {
+    border-bottom-color: rgba(255, 255, 255, .9);
+}
+
+.flatpickr-current-month .numInputWrapper span.arrowDown:after {
+    border-top-color: rgba(255, 255, 255, .9);
+}
+
+.flatpickr-innerContainer {
+    @apply p-4;
+}
+
+.flatpickr-day.today:not(.selected) {
+    @apply border-none bg-blue-gray-300 rounded-full text-blue-gray-500;
+}
+/* purgecss end ignore */
+
+/* addon */
+.leading-addon svg {
+    @apply h-5 w-5;
+}
+
+.leading-icon {
+    z-index: 1;
+}
+
+.leading-icon svg {
+    @apply max-w-full;
+}
+
+/* select */
+.form-select[multiple] {
+    background-image: none;
+    overflow: auto;
+}
+
+.form-select + .trailing-addon,
+.form-select + .trailing-icon {
+    right: 1.5rem;
+}
+
+.form-select.has-trailing-icon {
+    padding-right: 4rem;
+}
+
+/* custom select */
+.custom-select-container .inline-addon,
+.custom-select-container .leading-icon {
+    z-index: 1;
+}
+
+.custom-select__option--selected {
+    @apply text-blue-gray-900 bg-blue-gray-300;
+}
+
+.custom-select__option--selected .custom-select__option-display {
+    @apply font-semibold;
+}
+
+.custom-select__option--hovered {
+    @apply bg-blue-600 text-white;
+}
+
+.custom-select__option--disabled {
+    @apply opacity-50 cursor-not-allowed;
+}
+
+.custom-select__opt-group {
+    @apply bg-blue-gray-200 text-blue-gray-900 font-semibold;
+}
+
+.custom-select__select-count {
+    @apply text-xs text-blue-gray-500 ml-1;
+}
+
+.custom-select-clear {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.custom-select__menu-container[data-popper-placement="bottom-start"],
+.custom-select__menu-container[data-popper-placement="bottom-start"] .custom-select__menu {
+    @apply rounded-t-none;
+}
+
+.custom-select__menu-container[data-popper-placement="bottom-start"] + .custom-select__button-container,
+.custom-select__menu-container[data-popper-placement="bottom-start"] + .custom-select__button-container  .custom-select__button {
+    @apply rounded-b-none;
+}
+
+.custom-select__menu-container[data-popper-placement="top-start"],
+.custom-select__menu-container[data-popper-placement="top-start"] .custom-select__menu {
+    @apply rounded-b-none;
+}
+
+.custom-select__menu-container[data-popper-placement="top-start"] + .custom-select__button-container,
+.custom-select__menu-container[data-popper-placement="top-start"] + .custom-select__button-container  .custom-select__button {
+    @apply rounded-t-none;
+}
+
+/* clears the 'X' from Internet Explorer */
+input.busy[type=search]::-ms-clear,
+input.busy[type=search]::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* clears the 'X' from chrome */
+input.busy[type="search"]::-webkit-search-decoration,
+input.busy[type="search"]::-webkit-search-cancel-button,
+input.busy[type="search"]::-webkit-search-results-button,
+input.busy[type="search"]::-webkit-search-results-decoration {
+    display: none;
+}
+
+/* switch toggle */
+.switch-toggle {
+    @apply relative
+    flex-shrink-0
+    inline-flex
+    rounded-full
+    cursor-pointer
+    focus:outline-none
+    focus:ring-2
+    focus:ring-offset-2
+    focus:ring-primary;
+    /*focus:ring-blue-500;*/
+}
+
+.switch-toggle-simple {
+    @apply h-6
+    w-11
+    border-2
+    /*border-transparent*/
+    transition-colors
+    ease-in-out
+    duration-200
+    bg-blue-gray-200;
+}
+
+.switch-toggle-simple.pressed {
+    @apply bg-primary
+    /*bg-blue-600;*/
+}
+
+.switch-toggle-short {
+    @apply items-center
+    justify-center
+    h-5
+    w-10;
+}
+
+.switch-toggle-button {
+    @apply inline-block
+    h-5
+    w-5
+    rounded-full
+    bg-white
+    shadow
+    transform
+    ring-0
+    transition
+    ease-in-out
+    duration-200
+    translate-x-0;
+}
+
+.switch-toggle-button.pressed {
+    @apply translate-x-5;
+}
+
+.switch-toggle-short-bg {
+    @apply absolute
+    h-4
+    w-9
+    mx-auto
+    rounded-full
+    transition-colors
+    ease-in-out
+    duration-200
+    bg-gray-200;
+}
+
+.switch-toggle-short-bg.pressed {
+    @apply bg-blue-600;
+}
+
+.switch-toggle-short-button {
+    @apply absolute
+    left-0
+    inline-block
+    h-5
+    w-5
+    border
+    border-blue-gray-200
+    rounded-full
+    bg-white
+    shadow
+    transform
+    ring-0
+    transition-transform
+    ease-in-out
+    duration-200
+    translate-x-0;
+}
+
+.switch-toggle-short-button.pressed {
+    @apply translate-x-5;
+}
+
+.switch-toggle.disabled,
+.switch-toggle[disabled] {
+    @apply cursor-not-allowed;
+}
+
+.switch-toggle.disabled .switch-toggle-simple,
+.switch-toggle[disabled] .switch-toggle-simple {
+    @apply opacity-75;
+}
+
+.switch-toggle.disabled.switch-toggle-simple,
+.switch-toggle[disabled].switch-toggle-simple,
+.switch-toggle.disabled .switch-toggle-short-bg,
+.switch-toggle[disabled] .switch-toggle-short-bg {
+    @apply bg-cool-gray-200;
+}
+
+.switch-toggle.disabled.switch-toggle-simple.pressed,
+.switch-toggle[disabled].switch-toggle-simple.pressed,
+.switch-toggle.disabled .switch-toggle-short-bg.pressed,
+.switch-toggle[disabled] .switch-toggle-short-bg.pressed {
+    @apply bg-blue-400 opacity-75;
+}
+
+.switch-toggle.disabled .switch-toggle-button,
+.switch-toggle.disabled .switch-toggle-short-button,
+.switch-toggle[disabled] .switch-toggle-button,
+.switch-toggle[disabled] .switch-toggle-short-button {
+    @apply bg-blue-gray-100;
+}
+
+/*
+ * responsive switch variants.
+ * doing it this way because the selectors are not simple, and tailwind
+ * appends the size prefixes to the last selector, which is not desired.
+ */
+
+/* simple - sm */
+.switch-toggle--sm.switch-toggle-simple {
+    @apply h-5 w-10;
+}
+
+.switch-toggle--sm.switch-toggle-simple .switch-toggle-button {
+    @apply h-4 w-4;
+}
+
+.switch-toggle--sm.switch-toggle-simple .switch-toggle-button.pressed {
+    @apply translate-x-5;
+}
+
+/* simple - base */
+.switch-toggle--base.switch-toggle-simple {
+    @apply h-6 w-11;
+}
+
+.switch-toggle--base.switch-toggle-simple .switch-toggle-button {
+    @apply h-5 w-5;
+}
+
+.switch-toggle--base.switch-toggle-simple .switch-toggle-button.pressed {
+    @apply translate-x-5;
+}
+
+/* simple - lg */
+.switch-toggle--lg.switch-toggle-simple {
+    @apply h-8 w-14;
+}
+
+.switch-toggle--lg.switch-toggle-simple .switch-toggle-button {
+    @apply h-7 w-7;
+}
+
+.switch-toggle--lg.switch-toggle-simple .switch-toggle-button.pressed {
+    @apply translate-x-6;
+}
+
+/* short - lg */
+.switch-toggle--lg.switch-toggle-short {
+    @apply h-7 w-12;
+}
+
+.switch-toggle--lg.switch-toggle-short .switch-toggle-short-bg {
+    @apply h-5 w-11;
+}
+
+.switch-toggle--lg.switch-toggle-short .switch-toggle-short-button {
+    @apply h-6 w-6;
+}
+
+.switch-toggle--lg.switch-toggle-short .switch-toggle-short-button.pressed {
+    @apply translate-x-6;
+}
+
+@screen sm {
+    /* simple - sm */
+    .sm\:switch-toggle--sm.switch-toggle-simple {
+        @apply h-5 w-10;
+    }
+
+    .sm\:switch-toggle--sm.switch-toggle-simple .switch-toggle-button {
+        @apply h-4 w-4;
+    }
+
+    .sm\:switch-toggle--sm.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-5;
+    }
+
+    /* simple - base */
+    .sm\:switch-toggle--base.switch-toggle-simple {
+        @apply h-6 w-11;
+    }
+
+    .sm\:switch-toggle--base.switch-toggle-simple .switch-toggle-button {
+        @apply h-5 w-5;
+    }
+
+    .sm\:switch-toggle--base.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-5;
+    }
+
+    /* simple - lg */
+    .sm\:switch-toggle--lg.switch-toggle-simple {
+        @apply h-8 w-14;
+    }
+
+    .sm\:switch-toggle--lg.switch-toggle-simple .switch-toggle-button {
+        @apply h-7 w-7;
+    }
+
+    .sm\:switch-toggle--lg.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-6;
+    }
+
+    /* short - lg */
+    .sm\:switch-toggle--lg.switch-toggle-short {
+        @apply h-7 w-12;
+    }
+
+    .sm\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-bg {
+        @apply h-5 w-11;
+    }
+
+    .sm\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-button {
+        @apply h-6 w-6;
+    }
+
+    .sm\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-button.pressed {
+        @apply translate-x-6;
+    }
+}
+
+@screen md {
+    /* simple - sm */
+    .md\:switch-toggle--sm.switch-toggle-simple {
+        @apply h-5 w-10;
+    }
+
+    .md\:switch-toggle--sm.switch-toggle-simple .switch-toggle-button {
+        @apply h-4 w-4;
+    }
+
+    .md\:switch-toggle--sm.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-5;
+    }
+
+    /* simple - base */
+    .md\:switch-toggle--base.switch-toggle-simple {
+        @apply h-6 w-11;
+    }
+
+    .md\:switch-toggle--base.switch-toggle-simple .switch-toggle-button {
+        @apply h-5 w-5;
+    }
+
+    .md\:switch-toggle--base.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-5;
+    }
+
+    /* simple - lg */
+    .md\:switch-toggle--lg.switch-toggle-simple {
+        @apply h-8 w-14;
+    }
+
+    .md\:switch-toggle--lg.switch-toggle-simple .switch-toggle-button {
+        @apply h-7 w-7;
+    }
+
+    .md\:switch-toggle--lg.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-6;
+    }
+
+    /* short - lg */
+    .md\:switch-toggle--lg.switch-toggle-short {
+        @apply h-7 w-12;
+    }
+
+    .md\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-bg {
+        @apply h-5 w-11;
+    }
+
+    .md\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-button {
+        @apply h-6 w-6;
+    }
+
+    .md\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-button.pressed {
+        @apply translate-x-6;
+    }
+}
+
+@screen lg {
+    /* simple - sm */
+    .lg\:switch-toggle--sm.switch-toggle-simple {
+        @apply h-5 w-10;
+    }
+
+    .lg\:switch-toggle--sm.switch-toggle-simple .switch-toggle-button {
+        @apply h-4 w-4;
+    }
+
+    .lg\:switch-toggle--sm.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-5;
+    }
+
+    /* simple - base */
+    .lg\:switch-toggle--base.switch-toggle-simple {
+        @apply h-6 w-11;
+    }
+
+    .lg\:switch-toggle--base.switch-toggle-simple .switch-toggle-button {
+        @apply h-5 w-5;
+    }
+
+    .lg\:switch-toggle--base.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-5;
+    }
+
+    /* simple - lg */
+    .lg\:switch-toggle--lg.switch-toggle-simple {
+        @apply h-8 w-14;
+    }
+
+    .lg\:switch-toggle--lg.switch-toggle-simple .switch-toggle-button {
+        @apply h-7 w-7;
+    }
+
+    .lg\:switch-toggle--lg.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-6;
+    }
+
+    /* short - lg */
+    .lg\:switch-toggle--lg.switch-toggle-short {
+        @apply h-7 w-12;
+    }
+
+    .lg\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-bg {
+        @apply h-5 w-11;
+    }
+
+    .lg\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-button {
+        @apply h-6 w-6;
+    }
+
+    .lg\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-button.pressed {
+        @apply translate-x-6;
+    }
+}
+
+@screen xl {
+    /* simple - sm */
+    .xl\:switch-toggle--sm.switch-toggle-simple {
+        @apply h-5 w-10;
+    }
+
+    .xl\:switch-toggle--sm.switch-toggle-simple .switch-toggle-button {
+        @apply h-4 w-4;
+    }
+
+    .xl\:switch-toggle--sm.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-5;
+    }
+
+    /* simple - base */
+    .xl\:switch-toggle--base.switch-toggle-simple {
+        @apply h-6 w-11;
+    }
+
+    .xl\:switch-toggle--base.switch-toggle-simple .switch-toggle-button {
+        @apply h-5 w-5;
+    }
+
+    .xl\:switch-toggle--base.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-5;
+    }
+
+    /* simple - lg */
+    .xl\:switch-toggle--lg.switch-toggle-simple {
+        @apply h-8 w-14;
+    }
+
+    .xl\:switch-toggle--lg.switch-toggle-simple .switch-toggle-button {
+        @apply h-7 w-7;
+    }
+
+    .xl\:switch-toggle--lg.switch-toggle-simple .switch-toggle-button.pressed {
+        @apply translate-x-6;
+    }
+
+    /* short - lg */
+    .xl\:switch-toggle--lg.switch-toggle-short {
+        @apply h-7 w-12;
+    }
+
+    .xl\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-bg {
+        @apply h-5 w-11;
+    }
+
+    .xl\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-button {
+        @apply h-6 w-6;
+    }
+
+    .xl\:switch-toggle--lg.switch-toggle-short .switch-toggle-short-button.pressed {
+        @apply translate-x-6;
+    }
+}
+
+//easy mde
+
+.EasyMDEContainer {
+    @apply block;
+}
+
+.EasyMDEContainer.sided--no-fullscreen {
+    @apply flex flex-row flex-wrap;
+}
+
+.EasyMDEContainer .CodeMirror {
+    box-sizing: border-box;
+    height: auto;
+    border: 1px solid #ddd;
+    border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+    padding: 10px;
+    font: inherit;
+    z-index: 0;
+    word-wrap: break-word;
+}
+
+.EasyMDEContainer .CodeMirror-scroll {
+    cursor: text;
+}
+
+.EasyMDEContainer .CodeMirror-fullscreen {
+    background: #fff;
+    position: fixed !important;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: auto;
+    z-index: 8;
+    border-right: none !important;
+    border-bottom-right-radius: 0 !important;
+}
+
+.EasyMDEContainer .CodeMirror-sided {
+    width: 50% !important;
+}
+
+.EasyMDEContainer.sided--no-fullscreen .CodeMirror-sided {
+    border-right: none!important;
+    border-bottom-right-radius: 0px;
+    position: relative;
+    flex: 1 1 auto;
+}
+
+.EasyMDEContainer .CodeMirror-placeholder {
+    opacity: .5;
+}
+
+.EasyMDEContainer .CodeMirror-focused .CodeMirror-selected {
+    background: #d9d9d9;
+}
+
+.editor-toolbar {
+    position: relative;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    padding: 9px 10px;
+    border-top: 1px solid #bbb;
+    border-left: 1px solid #bbb;
+    border-right: 1px solid #bbb;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+
+.editor-toolbar.fullscreen {
+    width: 100%;
+    height: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+    background: #fff;
+    border: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    z-index: 9;
+}
+
+.editor-toolbar.fullscreen::before {
+    width: 20px;
+    height: 50px;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.editor-toolbar.fullscreen::after {
+    width: 20px;
+    height: 50px;
+    background: -moz-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+    background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -o-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 100%);
+    position: fixed;
+    top: 0;
+    right: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.EasyMDEContainer.sided--no-fullscreen .editor-toolbar {
+    width: 100%;
+}
+
+.editor-toolbar button, .editor-toolbar .easymde-dropdown {
+    background: transparent;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none !important;
+    height: 30px;
+    margin: 0;
+    padding: 0;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.editor-toolbar button {
+    width: 30px;
+}
+
+.editor-toolbar button.active,
+.editor-toolbar button:hover {
+    background: #fcfcfc;
+    border-color: #95a5a6;
+}
+
+.editor-toolbar i.separator {
+    display: inline-block;
+    width: 0;
+    border-left: 1px solid #d9d9d9;
+    border-right: 1px solid #fff;
+    color: transparent;
+    text-indent: -10px;
+    margin: 0 6px;
+}
+
+.editor-toolbar button:after {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 65%;
+    vertical-align: text-bottom;
+    position: relative;
+    top: 2px;
+}
+
+.editor-toolbar button.heading-1:after {
+    content: "1";
+}
+
+.editor-toolbar button.heading-2:after {
+    content: "2";
+}
+
+.editor-toolbar button.heading-3:after {
+    content: "3";
+}
+
+.editor-toolbar button.heading-bigger:after {
+    content: "▲";
+}
+
+.editor-toolbar button.heading-smaller:after {
+    content: "▼";
+}
+
+.editor-toolbar.disabled-for-preview button:not(.no-disable) {
+    opacity: .6;
+    pointer-events: none;
+}
+
+@media only screen and (max-width: 700px) {
+    .editor-toolbar i.no-mobile {
+        display: none;
+    }
+}
+
+.editor-statusbar {
+    padding: 8px 10px;
+    font-size: 12px;
+    color: #959694;
+    text-align: right;
+}
+
+.EasyMDEContainer.sided--no-fullscreen .editor-statusbar {
+    width: 100%;
+}
+
+.editor-statusbar span {
+    display: inline-block;
+    min-width: 4em;
+    margin-left: 1em;
+}
+
+.editor-statusbar .lines:before {
+    content: 'lines: '
+}
+
+.editor-statusbar .words:before {
+    content: 'words: '
+}
+
+.editor-statusbar .characters:before {
+    content: 'characters: '
+}
+
+.editor-preview-full {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 7;
+    overflow: auto;
+    display: none;
+    box-sizing: border-box;
+}
+
+.editor-preview-side {
+    position: fixed;
+    bottom: 0;
+    width: 50%;
+    top: 50px;
+    right: 0;
+    z-index: 9;
+    overflow: auto;
+    display: none;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    word-wrap: break-word;
+}
+
+.editor-preview-active-side {
+    display: block
+}
+
+.EasyMDEContainer.sided--no-fullscreen .editor-preview-active-side {
+    flex: 1 1 auto;
+    height: auto;
+    position: static;
+}
+
+.editor-preview-active {
+    display: block
+}
+
+.editor-preview {
+    padding: 10px;
+    background: #fafafa;
+}
+
+.editor-preview > p {
+    margin-top: 0
+}
+
+.editor-preview pre {
+    background: #eee;
+    margin-bottom: 10px;
+}
+
+.editor-preview table td,
+.editor-preview table th {
+    border: 1px solid #ddd;
+    padding: 5px;
+}
+
+.cm-s-easymde .cm-tag {
+    color: #63a35c;
+}
+
+.cm-s-easymde .cm-attribute {
+    color: #795da3;
+}
+
+.cm-s-easymde .cm-string {
+    color: #183691;
+}
+
+.cm-s-easymde .cm-header-1 {
+    font-size: 200%;
+    line-height: 200%;
+}
+
+.cm-s-easymde .cm-header-2 {
+    font-size: 160%;
+    line-height: 160%;
+}
+
+.cm-s-easymde .cm-header-3 {
+    font-size: 125%;
+    line-height: 125%;
+}
+
+.cm-s-easymde .cm-header-4 {
+    font-size: 110%;
+    line-height: 110%;
+}
+
+.cm-s-easymde .cm-comment {
+    background: rgba(0, 0, 0, .05);
+    border-radius: 2px;
+}
+
+.cm-s-easymde .cm-link {
+    color: #7f8c8d;
+}
+
+.cm-s-easymde .cm-url {
+    color: #aab2b3;
+}
+
+.cm-s-easymde .cm-quote {
+    color: #7f8c8d;
+    font-style: italic;
+}
+
+.editor-toolbar .easymde-dropdown {
+    position: relative;
+    background: linear-gradient(to bottom right, #fff 0%, #fff 84%, #333 50%, #333 100%);
+    border-radius: 0;
+    border: 1px solid #fff;
+}
+
+.editor-toolbar .easymde-dropdown:hover {
+    background: linear-gradient(to bottom right, #fff 0%, #fff 84%, #333 50%, #333 100%);
+}
+
+.easymde-dropdown-content {
+    display: block;
+    visibility: hidden;
+    position: absolute;
+    background-color: #f9f9f9;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    padding: 8px;
+    z-index: 2;
+    top: 30px;
+}
+
+.easymde-dropdown:active .easymde-dropdown-content,
+.easymde-dropdown:focus .easymde-dropdown-content {
+    visibility: visible;
+}
+
+span[data-img-src]::after{
+    content: '';
+    background-image: var(--bg-image);
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    background-size: contain;
+    height: 0;
+    padding-top: var(--height);
+    width: var(--width);
+    background-repeat: no-repeat;
+}

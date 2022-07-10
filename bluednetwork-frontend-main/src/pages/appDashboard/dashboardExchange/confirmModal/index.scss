@@ -1,0 +1,118 @@
+.close_modal {
+  position: absolute;
+  top: 5;
+  right: 0;
+  width: 18px;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.form_container {
+  text-align: center;
+  width: 100%;
+  padding: 0 50px;
+  h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 72px;
+    color: #000152;
+    margin-top: 1em;
+  }
+
+  button {
+    background: #ff7f00;
+    box-shadow: 0px 6px 15px rgba(26, 33, 107, 0.15);
+    border-radius: 100px;
+    border: none;
+    padding: 10px 50px;
+    font-weight: 700;
+    margin-top: 1em;
+    color: #ffffff;
+  }
+}
+
+.number__to__send {
+  padding: 20px 10px;
+  background: #f8f5f3;
+
+  h2 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 52px;
+    color: #000152;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    color: red;
+    line-height: 20px;
+  }
+}
+
+.warning__notice {
+  text-align: center;
+  p {
+    margin: 10px 0;
+    padding: 0;
+    line-height: 17px;
+    color: red;
+  }
+}
+
+.exchange_navigation {
+  button {
+    background: none;
+    border: none;
+  }
+}
+
+.upload__details {
+  margin: 30px 0;
+  width: 100%;
+  // padding: 0 50px;
+  h1 {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 52px;
+    color: #000152;
+    margin: 1em 0;
+  }
+
+  .file_upload {
+    width: 100%;
+    border: 1px dashed #9999ba;
+    box-sizing: border-box;
+    border-radius: 6px;
+    padding: 30px;
+  }
+
+  button {
+    background: #ff7f00;
+    box-shadow: 0px 6px 15px rgba(26, 33, 107, 0.15);
+    border-radius: 100px;
+    border: none;
+    padding: 10px 50px;
+    font-weight: 700;
+    margin-top: 1em;
+    color: #ffffff;
+    width: 100%;
+  }
+
+  // button:hover {
+  //   background: #ff7f00 !important;
+  //   box-shadow: 0px 6px 15px rgba(26, 33, 107, 0.15);
+  //   border-radius: 100px;
+  //   border: none;
+  //   padding: 10px 50px;
+  //   font-weight: 700;
+  //   margin-top: 1em;
+  //   color: #ffffff !important;
+  //   width: 100%;
+  // }
+}

@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200&display=swap");
+:root {
+  --text-color: #1f1f1f;
+  --text-color-heading: #1b1b1b;
+  --text-color-link: #0003b8;
+
+  --background-color: #ffffff;
+  --background-color-dark: #e4effb;
+  --background-color-light: white;
+  --background-color-secondary: #000152;
+
+  --font-family: Poppins;
+  --box-shadow: 0px 8px 30px rgba(43, 53, 130, 0.1);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-color);
+  overflow-x: hidden;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+  color: inherit;
+  font: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.sr-only {
+  display: none !important;
+}
+
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* styles */
+}
+/* Smartphones (portrait) ---------- */
+@media screen and (max-width: 320px) {
+  /* styles */
+}
+/* Smartphones (landscape) ---------- */
+@media screen and (min-width: 321px) {
+  /* styles */
+}
+/* Tablets, iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* styles */
+}
+/* Tablets, iPads (portrait) ---------- */
+@media screen and (min-width: 768px) {
+  /* styles */
+}
+/* Tablets, iPads (landscape) ---------- */
+@media screen and (min-width: 1024px) {
+  /* styles */
+}
+/* Desktops and laptops ---------- */
+@media screen and (min-width: 1224px) {
+  /* styles */
+}
+/* Large screens ---------- */
+@media screen and (min-width: 1824px) {
+  /* styles */
+}
+
+.glass {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  clip-path: inset(10em);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-shadow {
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(0px 20px 10px rgba(0, 0, 0, 0.9));
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.drop-shadow:before {
+  display: block;
+  content: "";
+  position: absolute;
+  top: 10em;
+  height: calc(100% - 20em);
+  width: calc(100% - 20em);
+  border-top: 2px solid rgba(225, 225, 225, 0.2);
+  border-left: 1px solid rgba(225, 225, 225, 0.1);
+  border-right: 1px solid rgba(225, 225, 225, 0.3);
+  z-index: 2;
+}
+
+.ReactModal__Overlay {
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+::-webkit-input-placeholder {
+  /* Edge */
+  color: #59597a !important;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #59597a !important;
+}
+
+::placeholder {
+  color: #59597a !important;
+}
+
+/* .select {
+  cursor:pointer;
+  color:black !important;
+} */
+
+/* invalid form */
+input.invalid,
+select.invalid,
+textarea.invalid {
+  border: 1px solid red !important;
+}

@@ -1,0 +1,117 @@
+.modal__content {
+  text-align: center;
+  width: 100%;
+
+  .title_header {
+    h1 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 28px;
+      line-height: 42px;
+      color: #000152;
+    }
+
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      color: #59597a;
+    }
+  }
+
+  button {
+    margin-top: 20px;
+    background: #ff7f00;
+    box-shadow: 0px 6px 15px rgba(26, 33, 107, 0.15);
+    border-radius: 100px;
+    padding: 10px 30px;
+    font-weight: 500;
+    border: none;
+    color: #ffffff;
+  }
+
+  button:hover {
+    background: #ffffff;
+    border: 2px solid #ff7f00;
+    color: #ff7f00;
+  }
+
+  .brand__category {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    text-align: center;
+
+    .single__category_web {
+      position: relative;
+      background: #ffffff;
+      box-shadow: 0px 0px 20px rgba(7, 7, 7, 0.1);
+      border-radius: 10px;
+      // padding: 30px 0 !important;
+
+      img {
+        width: 100%;
+        // height: 110px;
+      }
+
+      .design__price {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #ff7f00;
+        box-shadow: 0px 6px 20px rgba(83, 41, 0, 0.08);
+        border-radius: 10px 0px 100px;
+        padding: 4px 20px;
+
+        p {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 20px;
+          text-align: center;
+          color: #ffffff;
+          margin-bottom: 0 !important;
+        }
+      }
+
+      .choose__btn {
+        position: absolute;
+        left: 55%;
+        margin-left: -50px;
+        top: 30%;
+        display: none;
+
+        button {
+          background: #ff7f00;
+          box-shadow: 0px 6px 15px rgba(26, 33, 107, 0.15);
+          border-radius: 100px;
+          padding: 3px 10px;
+          font-weight: 500;
+          border: none;
+          color: #ffffff;
+        }
+      }
+    }
+
+    .single__category_web:hover,
+    .button__picked {
+      .choose__btn {
+        display: block;
+      }
+    }
+  }
+}
+
+.categories__details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 10px;
+}
+
+/* Smartphones (portrait) ---------- */
+@media screen and (max-width: 480px) {
+  /* styles */
+}

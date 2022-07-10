@@ -1,0 +1,22 @@
+.Cta-Section {
+  margin: 2em auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.hero-img {
+  width: 527px;
+  height: 392.42px;
+  margin: 6em auto;
+}
+
+.hero-text {
+  width: 541px;
+  max-width: 100%;
+}
+
+.img-fluid {
+  max-width: 100%;
+  object-fit: contain;
+}

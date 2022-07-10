@@ -1,0 +1,198 @@
+.top-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.google {
+  box-shadow: 0px 4px 15px rgba(5, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 4px 8px;
+  margin: 0 3px;
+}
+
+.google button {
+  box-shadow: none !important;
+  border: none !important;
+  display: block !important;
+  background-color: #ffffff !important;
+  align-items: center !important;
+  padding: 0px !important;
+  border-radius: 0 !important;
+  font-size: 10px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+}
+
+.google button div {
+  margin-right: 0 !important;
+}
+
+.google button span {
+  display: none;
+}
+
+.facebook {
+  box-shadow: 0px 4px 15px rgba(5, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 4px 15px;
+  color: #1976d2;
+  margin: 0 3px;
+}
+
+.facebook button {
+  box-shadow: none !important;
+  border: none !important;
+  display: block !important;
+  background-color: #ffffff !important;
+  align-items: center !important;
+  padding: 0px !important;
+  border-radius: 0 !important;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Roboto, sans-serif;
+  padding: 0 30px;
+}
+
+.horizontal {
+  display: flex;
+  margin: 30px 0 6px 0;
+}
+
+.horizontal-line {
+  border-bottom: 1px solid #ededed;
+  width: 100%;
+  margin-bottom: 23px;
+}
+
+.horizontal p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #ff7f00;
+}
+
+.form-wrapper input,
+select,
+textarea {
+  width: 100%;
+  box-shadow: 0px 4px 15px rgba(43, 53, 130, 0.1);
+  border-radius: 7px;
+  border: none;
+  padding: 13px 15px;
+  color: #59597A;
+}
+
+/* Job application Component */
+.drag-drop-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 2em auto;
+  padding: 0 2em 2em;
+  min-height: 103px;
+  max-width: 363px;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background: #ffffff;
+  border: 1px dashed #9999ba;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.job-app-form-fields-wrap {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.password-input {
+  margin: 40px 0 15px 0;
+  position: relative;
+}
+
+.password-input span {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #b4b4b4;
+}
+
+.recover {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: right;
+}
+
+.recover-link {
+  color: var(--text-color-link);
+}
+
+.signup-route-link {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  margin: 40px 0 0px 0;
+}
+
+.login-btn button {
+  /* background: #ff7f00; */
+  background: var(--text-color-link);
+  box-shadow: 0px 6px 15px rgba(26, 33, 107, 0.15);
+  border-radius: 100px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  color: #ffffff;
+  padding: 10px 20px;
+  width: 100%;
+  margin-top: 15px;
+}
+
+/* sign up */
+.signup-password-input {
+  position: relative;
+}
+
+.signup-password-input span {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  color: #b4b4b4;
+}
+
+/* quote */
+
+.quote-form {
+  max-width: 60%;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(43, 53, 130, 0.1);
+  border-radius: 20px;
+  transform: translate(0%, 10%);
+  /* margin: 150px auto; */
+  margin: 0 auto;
+  padding: 20px;
+}
+
+@media screen and (max-width: 568px) {
+  .quote-form {
+    max-width: 350px;
+    background: #ffffff;
+    box-shadow: 0px 8px 30px rgba(43, 53, 130, 0.1);
+    border-radius: 20px;
+    transform: translate(0%, 10%);
+    /* margin: 150px auto; */
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

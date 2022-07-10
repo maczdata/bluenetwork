@@ -1,0 +1,89 @@
+.dashboard-navbar-container {
+  width: 100%;
+  background-color: #ffffff;
+  border-bottom: 1px solid #eeeeee;
+  padding: 1.26rem 1.9rem;
+}
+.dashboard-navbar-left-container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.mobie__nav__menu {
+  color: #000152;
+  font-size: 1rem;
+  margin-right: 30px;
+}
+.dashboard-navbar-left-container h5 {
+  color: #000152;
+  margin: 0;
+}
+.dashboard-navbar-left-container img {
+  margin-left: 2rem;
+}
+
+.mobie__nav__menu {
+  display: none;
+}
+
+.navbar__wallet__balance h5 {
+  color: #ff1c1c;
+  color: #000152;
+}
+
+/* Tablets, iPads (portrait) ---------- */
+@media screen and (max-width: 768px) {
+  /* styles */
+  .mobie__nav__menu {
+    display: block;
+  }
+}
+
+/*
+.dashboard-navbar-right-container{
+    width:270px;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.navbar-icons-container{
+    width:90px;
+}
+.number-of-items{
+    width: 15px;
+    height: 15px;
+    background: #59597A;
+    border-radius: 50%;
+    align-self: flex-start;
+
+
+}
+.shopping-cart-container{
+    width: 40px;
+}
+.shopping-cart-container img{
+    align-self: center;
+    width: 60%;
+}
+.notification-container{
+    width: 30px;
+}
+.notification-container img{
+    width: 100%;
+}
+.profile-container{
+    width: 150px;
+    height: 37px;
+    box-shadow: 0px 0px 15px rgba(43, 53, 130, 0.1);
+    border-radius: 100px;
+}
+.profile-container p{
+    margin-bottom: 0px;
+}
+.profile-container p:nth-child(2){
+    font-size: 15px;
+    color: #000152;
+}
+.user-profile{
+    margin-right: 1em;
+} */

@@ -1,0 +1,147 @@
+.preview__modal__content {
+  width: 100%;
+
+  button {
+    margin-top: 20px;
+    background: #ff7f00;
+    box-shadow: 0px 6px 15px rgba(26, 33, 107, 0.15);
+    border-radius: 100px;
+    padding: 10px 30px;
+    font-weight: 500;
+    border: none;
+    color: #ffffff;
+  }
+
+  // button:hover {
+  //   background: #ffffff;
+  //   border: 1px solid #ff7f00;
+  //   color: #ff7f00;
+  //   padding: 10px 30px;
+  // }
+
+  h1 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #000152;
+  }
+
+  .meta__details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(100px, 1fr));
+
+    .single__meta {
+      h2 {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 18px;
+        color: #000152;
+      }
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 18px;
+        color: #59597a;
+      }
+    }
+  }
+  .descriptions {
+    h2 {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 13px;
+      line-height: 18px;
+      color: #000152;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 18px;
+      color: #59597a;
+    }
+  }
+  .addons {
+    h2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #59597a;
+      border-bottom: 1px solid #e3e3e2;
+    }
+    p {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000152;
+    }
+  }
+
+  .edit__action {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .edit__btn {
+      button {
+        margin-top: 0px ;
+        background: none;
+        box-shadow: none;
+        border-radius: 0px;
+        padding: 0px;
+        font-weight: 500;
+        border: none;
+        color: #ff7f00;
+      }
+    }
+
+    .total__amount {
+      p {
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: right;
+        color: #59597a;
+      }
+      span {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 32px;
+        line-height: 16px;
+        text-align: right;
+        color: #000152;
+      }
+    }
+  }
+
+  .call__to__action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .recharge__wallet {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    span {
+      font-size: 13px;
+      color: red;
+      margin-top: 10px;
+    }
+
+  }
+}
+/* Smartphones (portrait) ---------- */
+@media screen and (max-width: 480px) {
+  /* styles */
+}

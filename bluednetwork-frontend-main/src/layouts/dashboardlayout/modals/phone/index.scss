@@ -1,0 +1,46 @@
+.modalForDashBoard{
+    form{
+    margin: 20px 20px;
+    position: relative;
+    label{
+        display: flex;
+        width: 100%;
+        margin-bottom: 20px;
+        input{
+            padding: 5px;
+            width: 100%;
+            font-size: 14px;
+            border: 1px solid #000152;
+            border-radius: 5px;
+        }
+    }
+    button, div.button{
+        padding: 8px 15px;
+        margin: auto;
+        display: block;
+        background: #FF7F00;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 15px;
+        text-align: center;
+        cursor: pointer;
+    }
+    .x{
+        display: flex;
+        align-items: center;
+        position: static !important;
+        margin-bottom: 20px;
+        h5{
+            margin-bottom: 0;
+            font-size: 18px;
+            color: #000152;
+        }
+        .xclass{
+            margin-left: auto !important;
+        }
+        .xclass:hover{
+            cursor: pointer;
+        }
+    }
+}}

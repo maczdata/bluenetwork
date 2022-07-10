@@ -1,0 +1,149 @@
+.subscribe-wrapper {
+  background: #e4effb;
+  padding: 150px 0;
+  text-align: center;
+}
+
+.subscribe-wrapper h2 {
+  font-weight: bold;
+  font-size: 52px;
+  line-height: 78px;
+  color: #1f1f1f;
+}
+
+.subscribe-wrapper p {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1f1f1f;
+}
+
+.subscribe-input {
+  background: #ffffff;
+  max-width: 400px;
+  margin: 0 auto;
+  box-shadow: 0px 4px 15px rgba(43, 53, 130, 0.1);
+  border-radius: 50px;
+  border: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.subscribe-input input {
+  border: none;
+  outline: none;
+  width: 100%;
+}
+
+
+.subscribe-input button {
+  background: #0003b8;
+  box-shadow: 0px 4px 15px rgba(43, 53, 130, 0.1);
+  border-radius: 50px;
+  padding: 15px 12px;
+  border: none;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  align-self: flex-end;
+}
+
+
+.subscribe-input .icon {
+  margin: 0 10px;
+}
+
+
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* styles */
+  .subscribe-wrapper {
+    background: #e4effb;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .subscribe-wrapper h2 {
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #1f1f1f;
+  }
+  
+  .subscribe-wrapper p {
+    /* display: none; */
+  }
+  
+  .subscribe-input {
+    background: #ffffff;
+    max-width: 400px;
+    margin: 10px auto;
+    box-shadow: 0px 4px 15px rgba(43, 53, 130, 0.1);
+    border-radius: 50px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* .subscribe-input input {
+    border: none;
+    outline: none;
+    width: 100%;
+  } */
+  
+  
+  .subscribe-input button {
+    background: #0003b8;
+    box-shadow: 0px 4px 15px rgba(43, 53, 130, 0.1);
+    border-radius: 50px;
+    padding: 15px 12px;
+    border: none;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #ffffff;
+    align-self: flex-end;
+  }
+  
+  
+  .subscribe-input .icon {
+    margin: 0 10px;
+  }
+}
+/* Smartphones (portrait) ---------- */
+@media screen and (max-width: 320px) {
+  /* styles */
+}
+/* Smartphones (landscape) ---------- */
+@media screen and (min-width: 321px) {
+  /* styles */
+}
+/* Tablets, iPads (portrait and landscape) ---------- */
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  /* styles */
+}
+/* Tablets, iPads (portrait) ---------- */
+@media screen and (min-width: 768px) {
+  /* styles */
+}
+/* Tablets, iPads (landscape) ---------- */
+@media screen and (min-width: 1024px) {
+  /* styles */
+}
+/* Desktops and laptops ---------- */
+@media screen and (min-width: 1224px) {
+  /* styles */
+}
+/* Large screens ---------- */
+@media screen and (min-width: 1824px) {
+  /* styles */
+}

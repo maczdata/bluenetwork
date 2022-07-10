@@ -1,0 +1,330 @@
+/* Hero section */
+.hero-home-intro {
+  margin: auto;
+}
+
+.hero-home-intro h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+}
+
+.hero-home-intro p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 148.5%;
+  letter-spacing: 0.015em;
+  margin: 20px 0 0px 0;
+}
+
+.hero-home-intro .hero-home-btn .one {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  background: var(--text-color-link);
+  color: var(--background-color-light);
+  padding: 9px 23px;
+  border-radius: 100px;
+  border: none;
+  margin-right: 10px;
+}
+
+.hero-home-intro .hero-home-btn .two {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--text-color-link);
+  background: var(--background-color-light);
+  padding: 7px 23px;
+  border-radius: 100px;
+  border: 2px solid var(--text-color-link);
+  margin-left: 10px;
+}
+
+.hero-home-btn {
+  margin-top: 20px;
+}
+
+/* BD exchange section */
+.bd-exchange-home {
+  width: 100%;
+  margin-top: -200px;
+}
+
+.bd-exchange-home-intro {
+  margin: auto;
+  padding: 0 80px;
+}
+
+.bd-exchange-home img {
+  width: 100%;
+  height: 100%;
+}
+
+.bd-exchange-home h2,
+.bd-exchange-home-intro h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+}
+
+.faq-hero-career-wrapper h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+}
+
+.bd-exchange-home p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 148.5%;
+  letter-spacing: 0.015em;
+  margin: 40px 0;
+}
+
+.bd-exchange-home-link {
+  margin-top: 40px;
+  color: var(--text-color-link);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+/* BD bills section */
+
+.bd-bills-home {
+  width: 100%;
+  margin-top: -380px;
+}
+
+.bd-bills-home-intro {
+  margin: auto;
+  padding: 0 80px;
+}
+
+.bd-bills-home img {
+  width: 100%;
+}
+
+.bd-bills-home h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 38px;
+  line-height: 125%;
+  letter-spacing: 0.02em;
+}
+
+.bd-bills-home p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 148.5%;
+  letter-spacing: 0.015em;
+  margin: 40px 0;
+}
+
+.bd-bills-home-link a {
+  margin-top: 40px;
+  color: var(--text-color-link);
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+}
+
+/* BD Branding  */
+
+.bd-branding-home {
+  width: 100%;
+  margin-top: -340px;
+}
+
+/* BD Web  */
+.bd-web-home {
+  width: 100%;
+  margin-top: -320px;
+}
+
+/* BD Prints */
+.bd-prints-home {
+  width: 100%;
+  margin-top: -290px;
+}
+
+/* mobile-quote */
+.mobile-quote-wrapper {
+  width: 100%;
+  background: #e4effb;
+  padding: 100px 0;
+}
+
+.download-moble-app {
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.download-moble-app-content {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.download-moble-app-content h2 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+  color: #1b1b1b;
+}
+
+.download-app-btns .img2 {
+  margin-left: 5px;
+}
+
+.quote-wrapper {
+  margin: 70px 0 150px;
+  position: relative;
+}
+
+.quote-wrapper-img .left-side {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 700px;
+}
+
+.quote-wrapper-img .right-side {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 700px;
+}
+
+.display-on-small-screen img {
+  display: none;
+}
+
+.fix-home-err {
+  margin-bottom: -60px;
+}
+
+.download-moble-app-img img{
+  width: 100%;
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  /* styles */
+}
+
+@media screen and (max-width: 768px) {
+  .download-moble-app-content {
+    text-align: center;
+  }
+
+  .hero-home {
+    padding: 0px !important;
+    text-align: center; 
+  }
+
+  .bd-exchange-home-intro {
+    margin-top: 50px !important;
+  }
+
+  .bd-exchange-home {
+    width: 100%;
+    margin: 50px 0 !important;
+    text-align: center; 
+  }
+
+  .bd-bills-home {
+    width: 100%;
+    margin: 50px 0 !important;
+    text-align: center; 
+  }
+
+  .bd-branding-home {
+    width: 100%;
+    margin: 50px 0 !important;
+    text-align: center; 
+  }
+
+  .bd-web-home {
+    width: 100%;
+    margin: 50px 0 !important;
+    text-align: center; 
+  }
+
+  .bd-prints-home {
+    width: 100%;
+    margin: 50px 0 !important;
+    text-align: center; 
+  }
+
+  .bd-exchange-home-img {
+    display: none;
+  }
+
+  .display-on-small-screen img{
+    display: block !important;
+    margin-top: 60px;
+  }
+
+  /* .hero-home-img {
+    margin-top: 50px !important;
+  } */
+
+}
+
+/* Tablets, iPads (portrait) ---------- */
+@media screen and (max-width: 1029px) {
+  .hero-home {
+    padding-bottom: 50px;
+  }
+
+  .bd-exchange-home-intro {
+    margin: auto;
+    padding: 0 40px;
+  }
+
+  .bd-exchange-home {
+    width: 100%;
+    margin-top: -50px;
+  }
+
+  .bd-bills-home {
+    width: 100%;
+    margin-top: -50px;
+  }
+
+  .bd-branding-home {
+    width: 100%;
+    margin-top: -50px;
+  }
+
+  .bd-web-home {
+    width: 100%;
+    margin-top: -50px;
+  }
+
+  .bd-prints-home {
+    width: 100%;
+    margin-top: -50px;
+  }
+}

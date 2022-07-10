@@ -1,0 +1,35 @@
+name: Production deployment
+
+on:
+   push:
+      branches:
+         - main
+jobs:
+   deploy:
+      env:
+         REACT_APP_PAYSTACK_KEY:  ${{ secrets.PRODUCTION_PAYSTACK_KEY }}
+         REACT_APP_BASE_URL:  ${{ secrets.PRODUCTION_API_URL }}
+         REACT_APP_GOOGLE_CLIENT_ID: ${{ secrets.PRODUCTION_GOOGLE_CLIENT_ID }}
+         CI: false
+      runs-on: ubuntu-latest
+      steps:
+         - name: Development Code
+           uses: actions/checkout@master
+         - name: Use Node.js 14
+           uses: actions/setup-node@master
+           with:
+              node-version: 14
+              cache: 'yarn'
+         -  name: Install Dependencies
+            run: yarn install
+         -  name: Build
+            run: yarn run build
+         - name: Copy build to server
+           uses: appleboy/scp-action@master
+           with:
+              host: ${{ secrets.PRODUCTION_SERVER_HOST }}
+              username: ${{ secrets.PRODUCTION_USER }}
+              key: ${{ secrets.SSH_KEY }}
+              port: ${{ secrets.PRODUCTION_PORT }}
+              source: "build"
+              target: ${{ secrets.PRODUCTION_PATH }}

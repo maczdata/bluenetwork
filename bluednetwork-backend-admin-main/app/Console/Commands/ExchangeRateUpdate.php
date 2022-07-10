@@ -1,0 +1,45 @@
+<?php
+/*
+ * Copyright (C) 2021,  Chistel Brown,  - All Rights Reserved
+ * @project                  bds
+ * @file                           ExchangeRateUpdate.php
+ * @author                  Chistel Brown
+ * @site                          <http://twitter.com/chistelbrown>
+ * @email                      chistelbrown@gmail.com
+ * @lastmodified     12/08/2021, 1:04 PM
+ */
+
+namespace App\Console\Commands;
+
+use Illuminate\Console\Command;
+
+class ExchangeRateUpdate extends Command
+{
+    /**
+     * The name and signature of the console command.
+     *
+     * @var string
+     */
+    protected $signature = 'exchange-rate:update';
+
+    /**
+     * The console command description.
+     *
+     * @var string
+     */
+    protected $description = 'Automatically updates currency exchange rates ';
+
+    /**
+     * Execute the console command.
+     *
+     * @return void
+     */
+    public function handle()
+    {
+        try {
+            app(config('services.exchange-api.' . config('services.exchange-api.default') . '.class'))->updateRates();
+        } catch(\Exception $e) {
+            var_dump($e->getMessage());
+        }
+    }
+}

@@ -1,0 +1,32 @@
+.culture-wrapper {
+  max-width: 1200px;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0.5rem;
+  margin: 30px 0;
+}
+
+.culture-cards {
+  margin: 0 5px;
+  background: white;
+  box-shadow: 0px 8px 30px rgba(43, 53, 130, 0.1);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.culture-cards img {
+  width: 100%;
+  height: 60px;
+}
+
+.culture-card-content {
+  padding: 50px 0 20px;
+  margin: auto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  color: #000152;
+}

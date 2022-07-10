@@ -1,0 +1,21 @@
+[
+    {
+        "name": "BDS staging",
+        "ip": "68.183.1.16",
+        "username": "root",
+        "port": "22",
+        "beforeHooks": "",
+        "afterHooks": "",
+        "path": "/var/www/api_test"
+    },
+    {
+        "name": "BDS production",
+        "ip": "68.183.1.16",
+        "username": "root",
+        "port": "22",
+        "beforeHooks": "",
+        "afterHooks": "",
+        "path": "/var/www/main"
+    }
+]
+

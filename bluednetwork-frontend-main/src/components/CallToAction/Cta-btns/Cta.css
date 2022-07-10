@@ -1,0 +1,75 @@
+.cta-btn {
+  margin-top: 10px;
+  justify-content: space-between;
+  width: 310px;
+}
+
+.DownloadAppBtn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--text-color-link);
+  background: var(--background-color-light);
+  padding: 7px 23px;
+  border-radius: 100px;
+  border: 2px solid var(--text-color-link);
+  margin-left: 10px;
+}
+
+.DownloadAppBtn:hover {
+  border-radius: 100px;
+  border: none;
+  background: var(--text-color-link);
+  color: var(--background-color-light);
+}
+
+.getStartedBtn {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 22px;
+  background: var(--text-color-link);
+  color: var(--background-color-light);
+  padding: 14px 23px;
+  border-radius: 100px;
+  border: none;
+  margin-top: 12px;
+  width: 100%;
+  cursor: pointer;
+  z-index: 999;
+  transform: translate(0%);
+}
+
+.getStartedBtn:hover {
+  border: 2px solid var(--text-color-link);
+  color: var(--text-color-link);
+  padding: 12px 0px;
+  background: var(--background-color-light);
+}
+
+@media screen and (max-width: 768px) {
+
+  .cta-btn {
+    margin-top: 10px;
+    justify-content: space-between;
+    width: 100%;
+    text-align: center;
+  }
+
+  .getStartedBtn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    background: var(--text-color-link);
+    color: var(--background-color-light);
+    padding: 14px 23px;
+    border-radius: 100px;
+    border: none;
+    margin: 20px 0 60px 0;
+    width: 100%;
+  }
+}

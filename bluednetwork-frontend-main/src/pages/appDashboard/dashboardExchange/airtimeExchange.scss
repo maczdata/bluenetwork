@@ -1,0 +1,144 @@
+.airtime_exchange {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr !important;
+
+  .steps_and_exchange_rate {
+    // margin: 30px;
+    padding: 30px;
+
+    .already_sent_airtime {
+      font-style: normal;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0em;
+      text-align: left;
+
+      span {
+        font-weight: 700;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+      }
+    }
+
+    .airtime {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 24px;
+      color: #000152;
+    }
+
+    .steps_header {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      color: #59597a;
+    }
+
+    .steps {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 13px;
+      line-height: 20px;
+      color: #9999ba;
+
+      li {
+        margin: 20px 0;
+      }
+    }
+
+    .exchange_rates {
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: 60px;
+      }
+    }
+  }
+  // .airtime {
+  //   color: #000152;
+  //   font-size: 16px;
+  //   font-style: normal;
+  //   font-weight: 500;
+  //   line-height: 24px;
+  //   letter-spacing: 0em;
+  // }
+  .network-providers {
+    display: flex;
+    justify-content: space-between;
+
+    .provider_img {
+      cursor: pointer;
+      margin: 5px;
+
+      img {
+        width: 85px;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .quick__service_form {
+    padding: 20px;
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      box-shadow: 0px 4px 15px rgba(43, 53, 130, 0.1);
+      border-radius: 7px;
+      border: none;
+      padding: 13px 15px;
+      margin: 10px 0;
+    }
+
+    button {
+      width: 100%;
+      border: none;
+      padding: 13px 15px;
+      background: #ff7f00;
+      box-shadow: 0px 6px 15px rgba(26, 33, 107, 0.15);
+      border-radius: 100px;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 30px;
+      text-align: center;
+      color: #ffffff;
+      margin-top: 40px;
+    }
+
+    h2 {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 20px;
+      line-height: 30px;
+      color: #000152;
+    }
+  }
+}
+
+/* Smartphones (portrait and landscape) ---------- */
+@media screen and (max-width: 480px){
+  /* styles */
+  .airtime_exchange {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+}
+
+/* Tablets, iPads (portrait and landscape) ---------- */
+@media screen and (max-width: 768px){
+  /* styles */
+  .airtime_exchange {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr !important;
+  }
+}

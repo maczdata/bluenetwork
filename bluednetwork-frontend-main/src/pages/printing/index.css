@@ -1,0 +1,136 @@
+.hero-printing-intro {
+  margin: auto;
+}
+
+.hero-printing-intro h1 {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 48px;
+  letter-spacing: 0.02em;
+}
+
+.hero-printing-intro p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 148.5%;
+  letter-spacing: 0.015em;
+  margin: 20px 0 35px 0;
+}
+
+.hero-printing-intro .hero-printing-btn .one {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  background: var(--text-color-link);
+  color: var(--background-color-light);
+  padding: 9px 23px;
+  border-radius: 100px;
+  border: none;
+  margin-right: 10px;
+}
+
+.hero-printing-intro .hero-printing-btn .two {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 22px;
+  text-align: center;
+  color: var(--text-color-link);
+  background: var(--background-color-light);
+  padding: 7px 23px;
+  border-radius: 100px;
+  border: 2px solid var(--text-color-link);
+  margin-left: 10px;
+}
+
+.hero-printing-btn {
+  margin-top: 20px;
+}
+
+/* Printing Services and quote section */
+.printing-services-and-quote {
+  background: #e4effb;
+  padding-top: 5rem;
+  margin-top: 7rem;
+}
+.printing-services-container {
+  max-width: 90%;
+}
+.printing-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 0.5rem;
+}
+.printing-services-card {
+  background-image: url("../../assets/cards-ellipse.svg");
+  background-position: 50% 19%;
+  background-repeat: no-repeat;
+  position: relative;
+  background-color: #ffffff;
+  box-shadow: 0px 8px 30px rgba(43, 53, 130, 0.1);
+  border-radius: 15px;
+  height: 187px;
+  width: 218px;
+  margin: 1em 0;
+}
+.secondary-blue {
+  color: #000152;
+}
+/* Quote Section */
+.printing-quote-wrapper {
+  background: #e4effb;
+  position: relative;
+  padding: 0rem 0 10rem 0;
+}
+.printing-quote-form {
+  margin: 0 auto !important;
+}
+
+.printing-quote-wrapper-img .left-side {
+  position: absolute;
+  top: 5;
+  left: 0;
+  height: 700px;
+}
+
+.printing-quote-wrapper-img .right-side {
+  position: absolute;
+  top: 5;
+  right: 0;
+  height: 700px;
+}
+
+.hide-on-small-screen img {
+  width: 400px;
+}
+
+.display-on-small-screen {
+  display: none;
+}
+
+.fix-spacing {
+  margin: 50px !important;
+}
+
+@media screen and (max-width: 768px) {
+  /* styles */
+  .add_pd {
+    text-align: center;
+  }
+
+  .hide-on-small-screen {
+    display: none;
+  }
+
+  .display-on-small-screen {
+    display: block;
+  }
+
+  .fix-spacing {
+    margin: 30px 0 !important;
+  }
+}
